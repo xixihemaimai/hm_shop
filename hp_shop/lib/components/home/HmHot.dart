@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:hp_shop/viewmodes/home.dart';
 
 class HmHotView extends StatefulWidget {
-  HmHotView({Key? key}) : super(key: key);
+  SpecialOffer? hotProduct;
+  SpecialOffer? oneStopProduct;
+  String type = '';
+
+  HmHotView({Key? key, this.hotProduct, this.oneStopProduct, required this.type}) : super(key: key);
 
   @override
   _HmhotViewState createState() => _HmhotViewState();
